@@ -10,7 +10,9 @@ What you need:
 
 You need to dowload these libraries:
 https://github.com/etherkit/Si5351Arduino
+
 https://github.com/mikalhart/TinyGPSPlus
+
 https://github.com/etherkit/JTEncode
 
 The first thing you should do is edit the settings in the settings.h file.
