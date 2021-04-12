@@ -19,4 +19,6 @@ https://github.com/etherkit/JTEncode
 The first thing you should do is edit the settings in the settings.h file.
 All instructions are in the settings.h file.
 
+If your calle was received was received by other stations, you can find out the details here: http://wsprnet.org/drupal/wsprnet/spotquery
+
 Have fun!
