@@ -9,6 +9,7 @@
 
 // Your own HAM call. Change it
 #define MYCALL "MYCALL"
+
 // The power of your transmission in dBm. 
 // for the si5351 this should be set to 10 (=10 milliwatts).
 #define DBMPOWER 10
@@ -38,7 +39,7 @@
 * It won't work if you don't calibrate your si5351
 ************************************************************************************/
 // Change this value!
-#define SI5351_CORRECTION 50000
+#define SI5351_CORRECTION 11000
 
 /***********************************************************************************
 * wspr SETTINGS

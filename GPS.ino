@@ -39,6 +39,22 @@ void BlinkLED(unsigned int nr, unsigned int ms)
   }
 }
 
+/*********************************************************************************************************************************/
+// Print an unsigned long long to Serial output
+void printull(unsigned long long ull)
+{
+   char buf[16];
+   if(ull > 0xFFFFFFFFLL) 
+   {
+      sprintf(buf, "%lu%08lu", (unsigned long)(ull>>32), (unsigned long)(ull&0xFFFFFFFFULL));
+   } 
+   else 
+   {
+      sprintf(buf, "%lu", (unsigned long)ull);
+   }
+   Serial.println( buf ); 
+}
+
 
 /*********************************************************************************************************************************/
 // Process all data from the GPS and check the GPS time to see if we need to start send WSPR

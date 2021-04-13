@@ -17,7 +17,7 @@ TinyGPSPlus gps;
 #define MAX_TX_LEN WSPR_SYMBOL_COUNT
 
 // Global variables
-unsigned long freq;  
+unsigned long long freq;  
 uint8_t tx_buffer[255];
 uint8_t symbol_count;
 uint16_t tone_delay, tone_spacing;
@@ -229,7 +229,7 @@ void loop()
   {
     // Encode and TX
     #if defined(DEVMODE)    
-      Serial.print(F("TX..")); Serial.print(F("Frequency: ")); Serial.println(freq);
+      Serial.print(F("TX..")); Serial.print(F("Frequency: ")); printull(freq);
     #endif
   
     encode();
